@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    src:url("./fonts/Montserrat-Regular.ttf");
+    font-family: Montserrat-Regular;
+}
+@font-face {
+    src: url("./fonts/QEKRUZ Trial.ttf");
+    font-family: QEKRUZ;
+}
+body{
+font-size: 14px;
+font-family: Montserrat-Regular,sans-serif;
+}
+.image-container{
+    height: 50vh;
+    background-image: url("images/image-product-mobile.jpg");
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.details{
+   margin: 10px 30px;
+}
+#perfume{
+   color:  hsl(228, 12%, 48%);
+    font-size: 1.1rem;
+    text-transform: Uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+#header-text{
+    font-size: 2rem;
+    margin-top: 20px;
+    font-family: QEKRUZ,sans-serif;
+}
+#description{
+    color:  hsl(228, 12%, 48%);
+
+    word-spacing: 1px;
+    line-height: 27px;
+}
+.perfume-price{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#discounted-price{
+    color:  hsl(158, 36%, 37%);
+    font-size: 2.2rem;
+}
+#actual-price{
+    color:  hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.button{
+   background: hsl(158, 36%, 37%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 15px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 30px 0;
+    border-radius: 6px;
+}
+.button:hover{
+    cursor: pointer;
+    background: hsl(156, 42%, 18%);
+}
+@media screen and (min-width: 700px) {
+   body{
+       display: flex;
+       align-items: center;
+   }
+    .image-container{
+        background-image: url("images/image-product-desktop.jpg");
+        background-size:cover;
+        flex: 1;
+        height: 100vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+    }
+    .details{
+        flex: 1;
+    }
+    #perfume{
+        font-size: 1.2rem;
+    }
+    #header-text{
+        font-size: 2.2rem;
+        letter-spacing: 0.2px;
+    }
+    #description{
+        font-size: 1.1rem;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+
+}
+@media screen and (min-width: 900px) {
+    body{
+        gap: 20px;
+    }
+    #perfume{
+        font-size: 1.4rem;
+    }
+    #header-text{
+        font-size: 2.5rem;
+        letter-spacing: 0.2px;
+    }
+    #description{
+        font-size: 1.2rem;
+        line-height: 35px;
+        letter-spacing: 0.2px;
+    }
+
+    .button{
+
+        align-items: start;
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+
+}
+
+
+
